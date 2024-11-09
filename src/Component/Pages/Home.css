@@ -1,0 +1,13 @@
+/* Tagline styling */
+.home-tagline {
+    margin-top: 20px; /* Add space below the video */
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Highlight for "kalyan technology" */
+  .home-tagline .highlight {
+    color: #edb80a;
+    font-weight: bold;
+  }
