@@ -1,15 +1,18 @@
-/* Navbar Container */
+
+  /* Navbar Container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: linear-gradient(145deg, #000000, #1a1a1a);
-    box-shadow: 4px 4px 8px #0a0a0a, -4px -4px 8px #303030;
-    color: #edb80a;
-    position: relative;
-    z-index: 1000;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(145deg, #000000, #1a1a1a);
+  box-shadow: 4px 4px 8px #0a0a0a, -4px -4px 8px #303030;
+  color: #edb80a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
   
 /* Logo Image Styling */
 .navbar-logo {
