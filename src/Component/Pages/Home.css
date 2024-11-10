@@ -1,13 +1,37 @@
+.home-container {
+  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
 /* Tagline styling */
 .home-tagline {
-    margin-top: 20px; /* Add space below the video */
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
-  }
+  margin-top: 20px;
+  /* font-size: 1.5rem;  */
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; 
   
-  /* Highlight for "kalyan technology" */
-  .home-tagline .highlight {
-    color: #edb80a;
-    font-weight: bold;
-  }
+}
+
+/* Highlight color for "Kalyan Tech" */
+.highlight {
+  /* color: #00FFFF;  */
+  color: black;
+  font-weight: bold;
+  /* font-size: 1.6rem;  */
+  text-shadow: 0 0 8px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF; 
+  
+}
+
+/* Marquee text styling */
+.marquee-text {
+  font-size: 25px; 
+  color: white; 
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; 
+}
