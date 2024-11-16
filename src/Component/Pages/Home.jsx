@@ -14,6 +14,9 @@ export const Home = () => {
       
       {/* Carousel Section */}
       <Carousels />
+
+     
+      
     </div>
   );
 };

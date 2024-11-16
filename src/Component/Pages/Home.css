@@ -35,3 +35,17 @@
   text-align: center;
   text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; 
 }
+
+.video-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-video {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}

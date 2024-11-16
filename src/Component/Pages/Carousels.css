@@ -1,0 +1,23 @@
+.carousel-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the full width without stretching */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-height: 500px; /* Optional: To limit the height of the carousel */
+  }
+  
+  .carousel .carousel-indicators [data-bs-target] {
+    background-color: #007bff; /* Custom indicator color */
+  }
+  
+  .carousel .carousel-indicators .active {
+    background-color: #0056b3; /* Active indicator color */
+  }
+  
