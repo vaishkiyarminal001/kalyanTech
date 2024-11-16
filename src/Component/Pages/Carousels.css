@@ -3,21 +3,36 @@
     height: auto;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
   }
   
   .carousel-image {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures the image covers the full width without stretching */
-    border-radius: 8px; /* Optional: Rounded corners */
-    max-height: 500px; /* Optional: To limit the height of the carousel */
+    object-fit: cover; 
+    max-height: 500px; 
+    border-radius: 8px; 
+    position: relative;
+  }
+  
+  /* Faded edge effect */
+  .carousel-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6));
+    z-index: 1;
   }
   
   .carousel .carousel-indicators [data-bs-target] {
-    background-color: #007bff; /* Custom indicator color */
+    background-color: #007bff; 
   }
   
   .carousel .carousel-indicators .active {
-    background-color: #0056b3; /* Active indicator color */
+    background-color: #0056b3;
   }
   
