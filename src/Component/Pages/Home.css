@@ -1,134 +1,73 @@
 .home-container {
-  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4); 
+  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; 
+  color: white;
 }
 
-/* Tagline styling */
-.home-tagline {
-  margin-top: 20px;
-  /* font-size: 1.5rem;  */
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; 
-  
-}
-
-/* Highlight color for "Kalyan Tech" */
-.highlight {
-  /* color: #00FFFF;  */
-  color: black;
-  font-weight: bold;
-  /* font-size: 1.6rem;  */
-  text-shadow: 0 0 8px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF; 
-  
-}
-
-/* Marquee text styling */
 .marquee-text {
-  font-size: 25px; 
-  color: white; 
+  font-size: 25px;
+  color: white;
   margin: 0;
   text-align: center;
-  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; 
+  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4;
 }
-
-.video-container {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-video {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-}
-
-/* text section */
 
 .text-button-container {
-  width: 80%; /* Full-width container */
+  width: 80%;
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .text-container {
-  flex: 1; 
-  padding-right: 20px; 
-  /* border: 1px solid red; */
-
+  flex: 1;
+  padding-right: 20px;
 }
 
 .text-container h1 {
-  font-size: 35px; 
-  color: #fff; 
+  font-size: 35px;
+  color: #fff;
   margin-bottom: 10px;
-  text-align: left; 
 }
 
 .text-container p {
   font-size: 18px;
-  color: #ddd; 
+  color: #ddd;
   margin: 0;
-  text-align: left; 
 }
 
 .expert-button {
-  background-color: #FF69B4; 
+  background-color: #FF69B4;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 12px 25px; 
+  padding: 12px 25px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  align-self: flex-start; 
+  align-self: flex-start;
 }
 
 .expert-button:hover {
-  background-color: #FF1493; 
-  transform: scale(1.05); 
+  background-color: #FF1493;
+  transform: scale(1.05);
 }
 
-/* Mobile-friendly adjustments */
-@media (max-width: 768px) {
-  .text-button-container {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center;
-  }
-
-  .text-container {
-    padding-right: 0;
-    margin-bottom: 20px; /* Space below text in mobile view */
-  }
-
-  .expert-button {
-    align-self: center; /* Center the button on smaller screens */
-  }
-}
-
-
-
-/* Web Development Services Heading */
+/* Web Development Services Section */
 .services-heading {
   text-align: center;
   font-size: 28px;
   color: white;
   margin-top: 40px;
-  
 }
 
 .services-description {
@@ -149,13 +88,12 @@
   margin: 0 20px;
 }
 
-/* Card Styles */
 .card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  width: 22%; /* Set width to ensure the cards are side by side */
+  width: 22%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -172,7 +110,6 @@
   color: #777;
 }
 
-/* Hover Effects for Cards */
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -180,14 +117,93 @@
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+  .text-button-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .expert-button {
+    align-self: center;
+  }
+
   .services-cards {
     flex-direction: column;
     align-items: center;
   }
 
   .card {
-    width: 80%; /* Make cards full-width on small screens */
+    width: 80%;
     margin-bottom: 20px;
+  }
+}
+
+/* Features Container - Side by side Image and Text */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.features-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.features-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.features-section {
+  flex: 1;
+  text-align: left;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.features-list strong {
+  color: #007bff;
+}
+
+.check-icon {
+  color: #FF1493;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-image img {
+    max-width: 80%;
+  }
+
+  .features-section {
+    text-align: left;
   }
 }
 
