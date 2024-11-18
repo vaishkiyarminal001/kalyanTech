@@ -75,7 +75,7 @@ export const Contact = () => {
       <input
         type="tel"
         name="phone"
-        placeholder="Phone (e.g. 201-555-5555)"
+        placeholder="Phone"
         value={formData.phone}
         onChange={handleChange}
       />
@@ -86,15 +86,7 @@ export const Contact = () => {
         onChange={handleChange}
         required
       ></textarea>
-      {/* <div className="checkbox-container">
-        <input
-          type="checkbox"
-          name="requestNDA"
-          checked={formData.requestNDA}
-          onChange={handleChange}
-        />
-        <label>Request an NDA</label>
-      </div> */}
+
       <button type="submit" className="send-button">
         SEND
       </button>

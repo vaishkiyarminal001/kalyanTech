@@ -1,0 +1,151 @@
+/* Services.css */
+
+/* Container for the entire services section */
+.svc-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4);
+}
+
+/* Tagline Section */
+.svc-tagline {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.svc-tagline h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.svc-tagline p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Services Section (Grid Layout) */
+.svc-list {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Individual Service Card */
+.svc-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.svc-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Image */
+.svc-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Service Card Heading */
+.svc-card h3 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Popup Modal */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 0 10px;
+  overflow-y: auto; /* Allow scrolling on small devices */
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 80vh; /* To prevent the popup from going off-screen */
+  overflow-y: auto; /* Allow scrolling if content is too long */
+}
+
+.popup h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.popup-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.popup p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #e55a97;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .svc-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .svc-list {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+
+  .svc-tagline h1 {
+    font-size: 2rem;
+  }
+
+  .svc-tagline p {
+    font-size: 1rem;
+  }
+}

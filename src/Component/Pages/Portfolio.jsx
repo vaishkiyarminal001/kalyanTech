@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import cs from '../Assets/comingsoon.png';
+import './Portfolio.css'; // Importing the CSS file for styling
 
 export const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
-}
+    <div className="portfolio-container">
+      <img src={cs} alt="Coming Soon" className="portfolio-image" />
+    </div>
+  );
+};

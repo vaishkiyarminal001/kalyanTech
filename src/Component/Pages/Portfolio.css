@@ -1,0 +1,22 @@
+/* Center the container */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4);
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Style the image with smaller dimensions */
+  .portfolio-image {
+    max-width: 800px;
+    max-height: 800px; 
+    width: auto; 
+    height: auto; 
+    /* border-radius: 10px;  */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+  }
+  

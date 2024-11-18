@@ -207,3 +207,224 @@
   }
 }
 
+
+/* Technology Stack Section */
+.technology-stack {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.technology-stack h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff; /* Updated color to white */
+}
+
+.technology-stack p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #fff; /* Updated color to white */
+}
+
+/* Categories Container */
+.tech-stack-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Individual Category */
+.tech-category {
+  width: 30%; /* Adjust width for responsiveness */
+}
+
+.tech-category h2 {
+  font-size: 1.5rem;
+  color: white; 
+  margin-bottom: 15px;
+}
+
+/* Technology Items */
+.tech-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-items button {
+  border: none; /* Remove border */
+  border-radius: 50px; /* Make buttons more curved */
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+  backdrop-filter: blur(5px); /* Add subtle blur for a glassy effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.tech-items button:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(75, 0, 130, 0.8), /* Indigo with transparency */
+    rgba(255, 105, 180, 0.8), /* Pink with transparency */
+    rgba(30, 58, 138, 0.8) /* Blue with transparency */
+  );
+  color: #fff;
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+
+
+/* Team Section Container */
+.team-container {
+  width: 80%;
+  margin: 40px auto; /* Center the container */
+  padding: 40px 20px;
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Center-align vertically */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  color: white;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  backdrop-filter: blur(10px); /* Glassy effect */
+}
+
+/* Text Section Styling */
+.team-container h1 {
+  flex: 1; /* Allow the text to take up more space */
+  font-size: 2rem; /* Adjust font size */
+  line-height: 1.5; /* Better spacing for multiple lines */
+  margin: 0; /* Remove margin */
+  text-align: left; /* Align text to the left */
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+  padding-right: 20px; /* Add space between text and button */
+}
+
+/* Button Styling */
+.team-container button {
+  background: linear-gradient(145deg, #FF69B4, #1E3A8A); /* Gradient background */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Fully rounded button */
+  padding: 12px 25px; /* Button size */
+  font-size: 1.2rem; /* Button text size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth hover animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Depth effect */
+  text-align: center;
+}
+
+/* Button Hover Effect */
+.team-container button:hover {
+  background: linear-gradient(145deg, #1E3A8A, #FF69B4); /* Reverse gradient colors */
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column; /* Stack text and button vertically */
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .team-container h1 {
+    font-size: 1.8rem; /* Adjust text size */
+    text-align: center; /* Center-align text for smaller screens */
+    padding-right: 0; /* Remove extra spacing */
+    margin-bottom: 20px; /* Add spacing between text and button */
+  }
+
+  .team-container button {
+    align-self: center; 
+  }
+}
+
+
+
+.company-offer {
+  width: 80%;
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+.company-offer h1 {
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-size: 2em;
+  color: white;
+}
+
+.company-offer p {
+  text-align: center; 
+  color: white;
+  font-size: 1em;
+  margin-bottom: 40px; 
+}
+
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* Adds space between the items */
+  width: 100%;
+  padding: 10px;
+  background-color: transparent; /* Keep background transparent */
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background to match theme */
+  color: white;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  text-align: left;
+  /* border: 1px solid #444;  */
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px); /* Glass-like effect */
+}
+
+/* Heading style */
+.service-item h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Paragraph style */
+.service-item p {
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Hover effect */
+.service-item:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly darker on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  transform: translateY(-5px); /* Slightly lift the card */
+}
+
+/* Remove the border on the last item in each row (i.e., last column) */
+.service-item:nth-child(4n) {
+  border-right: none;
+}
+
+/* Remove the bottom border for the last row */
+.service-item:nth-last-child(-n+4) {
+  border-bottom: none;
+}
