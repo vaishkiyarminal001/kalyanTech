@@ -64,7 +64,7 @@ export const Ourwork = () => {
             <input type="text" placeholder="Last Name*" required />
             <input type="email" placeholder="Email*" required />
             <div className="our-work-mobile-input">
-              <span>+91</span>
+              {/* <span>+91</span> */}
               <input type="text" placeholder="Mobile No." required />
             </div>
             <textarea placeholder="Tell us about your dream website. What do you have in mind?" rows="4" required></textarea>
