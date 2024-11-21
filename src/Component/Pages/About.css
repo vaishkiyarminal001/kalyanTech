@@ -1,0 +1,178 @@
+/* General Styling */
+.about-page {
+  color: white;
+  line-height: 1.6;
+  background: linear-gradient(145deg, #000000, #4b0082, #1e3a8a, #ff69b4);
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(145deg, #1b4965, #ff69b4);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Tactical Solutions Section */
+.about-tactical-solutions {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  
+}
+
+.about-tactical-solutions h2 {
+  font-size: 2rem;
+  color: #ff69b4;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  /* border: 1px solid red; */
+}
+
+.about-tactical-solutions p {
+  color: white;
+  margin: auto;
+  width: 80%;
+  /* border: 1px solid red; */
+}
+
+/* Statistics Section */
+.about-statistics {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(145deg, #1e3a8a, #4b0082);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 10px;
+  color: white;
+  margin: 20px auto;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ff69b4;
+}
+
+.stat p {
+  font-size: 1rem;
+}
+
+/* Mission and Core Values Section */
+.about-mission-values {
+    /* border: 1px solid red; */
+  width: 70%;
+  padding: 40px 20px;
+  text-align: center;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 10px;
+  margin: 20px auto;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.about-mission-values h2 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.core-values {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.value-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* border: 1px solid red; */
+  color: black;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+/* Call-to-Action Section */
+.about-cta {
+  background: linear-gradient(145deg, #4b0082, #ff69b4);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.about-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-cta button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-statistics {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .core-values {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-card {
+    width: 80%;
+  }
+
+  .about-cta button {
+    padding: 12px 20px;
+  }
+}

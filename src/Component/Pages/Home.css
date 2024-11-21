@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  
 }
 
 .marquee-text {
@@ -13,6 +14,7 @@
   margin: 0;
   text-align: center;
   text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4;
+  
 }
 
 .text-button-container {
@@ -26,6 +28,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
 .text-container {
@@ -60,6 +63,8 @@
 .expert-button:hover {
   background-color: #FF1493;
   transform: scale(1.05);
+  
+  
 }
 
 /* Web Development Services Section */
@@ -120,6 +125,7 @@
   .text-button-container {
     flex-direction: column;
     text-align: center;
+   
   }
 
   .text-container {
@@ -234,50 +240,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+  /* border: 1px solid red; */
 }
 
 /* Individual Category */
 .tech-category {
   width: 30%; /* Adjust width for responsiveness */
+
 }
 
 .tech-category h2 {
   font-size: 1.5rem;
   color: white; 
   margin-bottom: 15px;
+  /* border: 1px solid red; */
 }
 
-/* Technology Items */
-.tech-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-.tech-items button {
-  border: none; /* Remove border */
-  border-radius: 50px; /* Make buttons more curved */
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  color: #fff; /* Button text color */
-  cursor: pointer;
-  backdrop-filter: blur(5px); /* Add subtle blur for a glassy effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  transition: all 0.3s ease;
-}
-
-.tech-items button:hover {
-  background: linear-gradient(
-    145deg,
-    rgba(75, 0, 130, 0.8), /* Indigo with transparency */
-    rgba(255, 105, 180, 0.8), /* Pink with transparency */
-    rgba(30, 58, 138, 0.8) /* Blue with transparency */
-  );
-  color: #fff;
-  transform: scale(1.1); /* Slightly increase size on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
-}
 
 
 
@@ -351,6 +330,9 @@
 
 
 
+
+/* company offers */
+
 .company-offer {
   width: 80%;
   margin: 0 auto; 
@@ -371,7 +353,7 @@
   margin-bottom: 40px; 
 }
 
-
+/* Services Container */
 .services-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
@@ -379,7 +361,7 @@
   gap: 20px; /* Adds space between the items */
   width: 100%;
   padding: 10px;
-  background-color: transparent; /* Keep background transparent */
+  background-color: transparent; 
 }
 
 .service-item {
@@ -388,13 +370,13 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background to match theme */
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  border-radius: 8px; /* Rounded corners for a modern look */
+  border-radius: 8px; 
   text-align: left;
-  /* border: 1px solid #444;  */
+  /* border: 1px solid red; */
   transition: all 0.3s ease;
-  backdrop-filter: blur(8px); /* Glass-like effect */
+  backdrop-filter: blur(8px); 
 }
 
 /* Heading style */
@@ -427,4 +409,77 @@
 /* Remove the bottom border for the last row */
 .service-item:nth-last-child(-n+4) {
   border-bottom: none;
+}
+
+/* Mobile and Tablet View Adjustments */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .company-offer {
+    width: 90%; /* Slightly wider for mobile */
+    padding: 10px;
+  }
+
+  .company-offer h1 {
+    font-size: 1.6em; /* Reduce font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .company-offer p {
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 15px; /* Less gap on smaller screens */
+  }
+
+  .service-item {
+    padding: 15px; /* Adjust padding for smaller devices */
+    font-size: 0.9em; /* Smaller font size */
+    border: 1px solid transparent; /* Hide border on mobile */
+  }
+
+  .service-item h2 {
+    font-size: 1.4em; /* Smaller heading */
+  }
+
+  .service-item p {
+    font-size: 0.9em; /* Adjust paragraph font size */
+  }
+}
+
+/* Extra small mobile view */
+@media (max-width: 480px) {
+  .company-offer {
+    width: 95%; /* Even more width on very small screens */
+  }
+
+  .company-offer h1 {
+    font-size: 1.4em; /* Further reduced font size */
+  }
+
+  .company-offer p {
+    font-size: 0.8em; /* Smaller paragraph text */
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .service-item {
+    padding: 10px; /* Minimal padding on very small screens */
+  }
+
+  .service-item h2 {
+    font-size: 1.3em; /* Reduce heading size */
+  }
+
+  .service-item p {
+    font-size: 0.8em; /* Smaller paragraph font */
+  }
 }
