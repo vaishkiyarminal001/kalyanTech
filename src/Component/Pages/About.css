@@ -5,6 +5,11 @@
   background: linear-gradient(145deg, #000000, #4b0082, #1e3a8a, #ff69b4);
 }
 
+.about-page img{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
 /* Hero Section */
 .about-hero {
   background: linear-gradient(145deg, #1b4965, #ff69b4);
@@ -68,7 +73,7 @@
 }
 
 .stat h3 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin: 0;
   color: #ff69b4;
 }
@@ -125,54 +130,79 @@
   margin-bottom: 10px;
 }
 
-/* Call-to-Action Section */
 .about-cta {
-  background: linear-gradient(145deg, #4b0082, #ff69b4);
   color: white;
-  text-align: center;
-  padding: 50px 20px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  
+}
+
+.cta-image {
+  max-width: 50%;
+  height: auto;
   border-radius: 10px;
 }
 
-.about-cta h2 {
-  font-size: 2.5rem;
+.cta-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.cta-text h3 {
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
-.about-cta button {
-  background: #ff69b4;
+.gradient-button {
+  background: linear-gradient(145deg, #ff69b4, #4b0082); 
   color: white;
+  font-size: 1.2rem; 
+  font-weight: bold;
+  padding: 15px 30px; 
   border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 50px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
-.about-cta button:hover {
-  background: #ff1493;
-  transform: scale(1.1);
+.gradient-button:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
 }
+
+.gradient-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .about-statistics {
+  .cta-content {
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
   }
 
-  .core-values {
-    flex-direction: column;
-    align-items: center;
+  .cta-image {
+    max-width: 80%;
+    margin-bottom: 20px;
   }
 
-  .value-card {
-    width: 80%;
+  .cta-text h2 {
+    font-size: 2rem;
   }
 
-  .about-cta button {
+  .cta-text button {
     padding: 12px 20px;
   }
 }

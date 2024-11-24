@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./About.css";
+import hand from '../Assets/hand.jpg';
+import aboutus from '../Assets/aboutus.png';
 import { FaLightbulb, FaHandHoldingHeart, FaHandshake } from "react-icons/fa"; // Icons for the core values
 
 export const About = () => {
@@ -9,6 +11,7 @@ export const About = () => {
   return (
     <div className="about-page">
       {/* Hero Section */}
+      <img src={aboutus} alt="About us" />
       <div className="about-hero">
         <h1>About Us</h1>
         <p>
@@ -71,11 +74,21 @@ export const About = () => {
 
 
     
-      {/* Call-to-Action Section */}
       <div className="about-cta">
-        <h2>Get Started with your Project or Take Existing one to Next Level</h2>
-        <button onClick={() => navigate('/contact')}>Contact Now</button> {/* Navigate to Contact Page */}
-      </div>
+  <div className="cta-content">
+    <img
+      src={hand}
+      alt="Handshake representing collaboration"
+      className="cta-image"
+    />
+    <div className="cta-text">
+      <h3>Get Started with your Project or Take Existing one to Next Level</h3>
+      <button className="gradient-button" onClick={() => navigate('/contact')}>Contact Now</button>
+    </div>
+  </div>
+</div>
+
+
     </div>
   );
 };

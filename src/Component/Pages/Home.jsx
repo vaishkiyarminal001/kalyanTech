@@ -122,52 +122,7 @@ export const Home = () => {
         to blend expertise with fresh ideas, ensuring your software meets the latest standards.
       </p>
 
-
-      {/* Cards Section */}
-      <div className="services-cards">
-        <div className="card">
-          <h3>Full Stack Development</h3>
-          <p>Highly skilled in front-end and back-end technologies, our web developers build dynamic and responsive web development solutions that bring your vision to life.</p>
-        </div>
-        <div className="card">
-          <h3>Search Engine Optimization</h3>
-          <p>Search Engine Optimization puts your Website on the early pages of the engines by the use of keywords and phrases. Our certified team excels at it.</p>
-        </div>
-        <div className="card">
-          <h3>Social Media Marketing</h3>
-          <p>Kalyan Technology stands as a top-notch company specializing in social media marketing, adeptly navigate the online landscape to boost brand exposure and interaction.</p>
-        </div>
-        <div className="card">
-          <h3>Mobile Development</h3>
-          <p>Need a trendy app to lure mobile users? We create user-friendly platforms for maximum appeal. Contact us.</p>
-        </div>
-
-      </div>
-
-
-     
-
-
-      {/* talk to us */}
-
-      <div className="team-container">
-        <div>
-          <h1>Our team will deliver optimal functionality<br /> and user experience</h1>
-        </div>
-        <button onClick={handleContactRedirect}>
-          Talk To Us
-        </button>
-      </div>
-
-      <Ourwork/>
-
-      {/* company offers */}
-
       <div className="company-offer">
-        <h1>What our Web Development Company Offers</h1>
-        <p>
-          At Intellectsoft, we design web products that make your brand stand out and deliver impactful business results. Recognized for our award-winning services, we ensure your web software is customer-centric, user-friendly, and up-to-date with the latest technology. Here’s a quick look at what we offer:
-        </p>
 
 
         <div class="services-container">
@@ -214,6 +169,28 @@ export const Home = () => {
 
       </div>
 
+     
+
+
+     
+
+
+      {/* talk to us */}
+
+      <div className="team-container">
+        <div>
+          <h1>Our team will deliver optimal functionality<br /> and user experience</h1>
+        </div>
+        <button onClick={handleContactRedirect}>
+          Talk To Us
+        </button>
+      </div>
+
+      <Ourwork/>
+
+      {/* company offers */}
+
+     
 
       {/* FAQ */}
 
