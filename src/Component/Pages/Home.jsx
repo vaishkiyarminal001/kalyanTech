@@ -14,7 +14,7 @@ export const Home = () => {
     contactNumber: '',
     city: ''
   });
-  
+
   const [isFormVisible, setIsFormVisible] = useState(false); // Added to toggle form visibility
 
   const handleInputChange = (e) => {
@@ -56,7 +56,10 @@ export const Home = () => {
     <div className="home-container">
       <Marquee direction="left" speed={60} delay={10} style={{ height: '50px', width: '100%', margin: 'auto' }}>
         <h1 className="marquee-text">
-          Empower your future with <span className="highlight">"Kalyan Tech"</span>
+          Empower your future with <span className="highlight">"Kalyan Tech"</span> ∞ 
+          Empower your future with <span className="highlight">"Kalyan Tech"</span> ∞ 
+          Empower your future with <span className="highlight">"Kalyan Tech"</span> ∞ 
+          Empower your future with <span className="highlight">"Kalyan Tech"</span> ∞ 
         </h1>
       </Marquee>
 
@@ -123,7 +126,7 @@ export const Home = () => {
         </div>
       )}
 
- {/* Web Development Services Section */}
+      {/* Web Development Services Section */}
       <h1 className="services-heading">Web Development Services We Offer</h1>
 
       <p className="services-description">
@@ -177,14 +180,14 @@ export const Home = () => {
         </div>
 
         <div className="exploreBtn">
-              <div
-                className="exploreTxt"
-                onClick={(handleserviceRedirect) }
-              >
-                <span>&#x2794;</span>
-                Explore More
-              </div>
-            </div>
+          <div
+            className="exploreTxt"
+            onClick={(handleserviceRedirect)}
+          >
+            <span>&#x2794;</span>
+            Explore More
+          </div>
+        </div>
 
       </div>
 

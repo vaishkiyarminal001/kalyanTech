@@ -1,5 +1,5 @@
 import React from 'react';
-import cs from '../Assets/comingsoon.png';
+import cs from '../Assets/comingsoon.jpg';
 import './Portfolio.css'; // Importing the CSS file for styling
 
 export const Portfolio = () => {

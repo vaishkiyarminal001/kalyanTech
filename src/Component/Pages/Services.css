@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 20px;
   max-width: 100%;
-  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4);
+  background: linear-gradient(135deg, #0A0F1F,  #08121E,  #000000, #304c6b); /* Background gradient */
 }
 
 /* Tagline Section */
@@ -38,15 +38,14 @@
 
 /* Individual Service Card */
 .svc-card {
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to match background */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mild shadow effect */
   padding: 20px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 
 /* Service Image */
 .svc-img {
@@ -60,7 +59,7 @@
 /* Service Card Heading */
 .svc-card h3 {
   font-size: 1.6rem;
-  color: #333;
+  color: #fff; /* White color for heading text */
 }
 
 /* Popup Modal */
@@ -80,7 +79,8 @@
 }
 
 .popup {
-  background-color: white;
+  /* background-color: white; */
+  background: linear-gradient(135deg, #0A0F1F,  #08121E,  #000000, #304c6b); 
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -95,6 +95,7 @@
 .popup h2 {
   font-size: 2rem;
   margin-bottom: 15px;
+  color: white;
 }
 
 .popup-img {
@@ -107,13 +108,13 @@
 
 .popup p {
   font-size: 1rem;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 }
 
 .close-btn {
-  background-color: #FF69B4;
-  color: white;
+  /* background-color: #FF69B4; */
+  color: black;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -130,7 +131,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .Btntext {
@@ -138,7 +138,7 @@
   position: relative;
   width: 180px;
   height: 50px;
-  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4);
+  background: linear-gradient(135deg, #0A0F1F,  #08121E,  #000000, #304c6b);
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -193,8 +193,6 @@
 .Btntext:hover span {
   left: calc(100% - 55px);
 }
-
-
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {

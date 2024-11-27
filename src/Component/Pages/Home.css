@@ -14,9 +14,11 @@
   color: white;
   margin: 0;
   text-align: center;
-  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4;
-  
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+               0 0 12px rgba(144, 202, 249, 0.6), 
+               0 0 16px rgba(66, 135, 245, 0.7); /* Subtle blue glow */
 }
+
 
 .text-button-container {
   width: 80%;
@@ -50,23 +52,26 @@
 }
 
 .expert-button {
-  background-color: #FF69B4;
-  color: white;
+  background: linear-gradient(145deg, #09111b, #f1f1f1); /* Light white gradient background */
+  color: white; /* Dark text color for better contrast */
   border: none;
-  border-radius: 5px;
-  padding: 12px 25px;
+  border-radius: 50px; /* Rounded corners */
+  padding: 12px 30px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   align-self: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  margin-top: 3%;
 }
 
 .expert-button:hover {
-  background-color: #FF1493;
-  transform: scale(1.05);
-  
-  
+  background: linear-gradient(145deg, #ffffff, #070707); 
+  color: black;
+  transform: scale(1.05); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
 }
+
 
 /* Web Development Services Section */
 .services-heading {
