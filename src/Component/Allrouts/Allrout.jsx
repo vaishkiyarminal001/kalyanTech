@@ -7,6 +7,7 @@ import { Ourwork } from '../Pages/Ourwork'
 import { Portfolio } from '../Pages/Portfolio'
 import { Contact } from '../Pages/Contact'
 import { Error } from '../Pages/Error'
+import Footer from '../Footer/Footer'
 
 
 export const Allrout = () => {
@@ -19,6 +20,7 @@ export const Allrout = () => {
       <Route path='/portfolio' element={<Portfolio/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='*' element={<Error/>} />
+      <Route path='/footer' element={<Footer/>} />
 
 
     </Routes>

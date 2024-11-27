@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px; /* Increased padding for a taller navbar */
-  background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4); /* Black, Purple, Dark Blue, Pink */
+  /* background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4); */
+  background: linear-gradient(135deg, #0A0F1F, #08121E, #000000, #304c6b);
   box-shadow: 4px 4px 8px #0a0a0a, -4px -4px 8px #303030;
   color: white; /* White text */
   position: sticky;
@@ -42,7 +43,8 @@
   font-size: 1.1em;
   padding: 8px 15px;
   border-radius: 8px;
-  text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; /* Hot Pink glow */
+  /* text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4;  */
+  text-shadow: 0 0 5px #304c6b, 0 0 15px #0A0F1F, 0 0 25px #FFFFFF;
   background-color: transparent; /* Transparent background */
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }

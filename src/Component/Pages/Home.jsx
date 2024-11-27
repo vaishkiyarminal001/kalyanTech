@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import { Carousels } from './Carousels';
 import { Faq } from './Faq';
@@ -9,10 +9,34 @@ import { Ourwork } from './Ourwork';
 
 export const Home = () => {
 
-  const handleWhatsAppRedirect = () => {
-    window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
+  const [formData, setFormData] = useState({
+    name: '',
+    contactNumber: '',
+    city: ''
+  });
+  
+  const [isFormVisible, setIsFormVisible] = useState(false); // Added to toggle form visibility
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
 
+  const handleWhatsAppRedirect = () => {
+    const { name, contactNumber, city } = formData;
+
+    if (!name || !contactNumber || !city) {
+      alert("Please fill out all the fields.");
+      return;
+    }
+
+    const message = `Hello, my name is ${name}. I want to make a website or mobile application. My contact number is ${contactNumber}. I am from ${city}.`;
+    const whatsappURL = `https://wa.me/9507254304?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
+  };
 
   const navigate = useNavigate();
 
@@ -20,10 +44,13 @@ export const Home = () => {
     navigate('/contact');
   };
 
+  const handleserviceRedirect = () => {
+    navigate('/services');
+  };
 
-
-  
-
+  const handleFormToggle = () => {
+    setIsFormVisible(!isFormVisible); // Toggle form visibility
+  };
 
   return (
     <div className="home-container">
@@ -33,92 +60,74 @@ export const Home = () => {
         </h1>
       </Marquee>
 
-      {/* Carousel Section */}
       <Carousels />
 
-      {/* web solution */}
-
       <h1 className="services-heading">Get a Ready-Made web solution</h1>
-
       <p className="services-description">
         We're constantly testing, updating, and refining our web development processes to ensure we meet all quality standards and deliver the very best.<br />
-        Our developers stay on top of the latest innovations, making sure your project benefits from the newest technologies. Your web development solutions will feature:
+        Our developers stay on top of the latest innovations, making sure your project benefits from the newest technologies.
       </p>
 
-      {/* Features Container - Side by side Image and Text */}
       <div className="features-container">
-        {/* Image - Right side */}
         <div className="features-image">
           <img src={dummy} alt="Custom Features" />
         </div>
-
-        {/* Text in Points - Left side */}
-
-
         <div className="features-section">
           <ul className="features-list">
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Custom Features:</strong> Designed to meet your specific
-              needs and requirements.
-            </li>
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Intuitive UI/UX Design:</strong> Visually appealing,
-              accessible, and inclusive. Ensuring easy navigation and high
-              customer satisfaction.
-            </li>
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Scalability and Security:</strong> Built-in scalability
-              and industry-standard security from the start.
-            </li>
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Responsive Design:</strong> Your website will adjust
-              flawlessly to any screen size, any device.
-            </li>
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Professional Imagery:</strong> High-quality, engaging
-              visuals that capture your brand's essence.
-            </li>
-            <li>
-              <span className="check-icon">✔</span>{" "}
-              <strong>Ongoing Maintenance and Support:</strong> Continuous
-              support and updates to keep your solution running smoothly.
-            </li>
+            <li><span className="check-icon">✔</span> <strong>Custom Features:</strong> Designed to meet your specific needs and requirements.</li>
+            <li><span className="check-icon">✔</span> <strong>Intuitive UI/UX Design:</strong> Ensuring easy navigation and high customer satisfaction.</li>
+            <li><span className="check-icon">✔</span> <strong>Scalability and Security:</strong> Built-in scalability and industry-standard security from the start.</li>
+            <li><span className="check-icon">✔</span> <strong>Responsive Design:</strong> Your website will adjust flawlessly to any screen size.</li>
+            <li><span className="check-icon">✔</span> <strong>Professional Imagery:</strong> High-quality visuals that capture your brand's essence.</li>
+            <li><span className="check-icon">✔</span> <strong>Ongoing Maintenance and Support:</strong> Continuous support and updates to keep your solution running smoothly.</li>
           </ul>
         </div>
       </div>
 
-
-      {/* Right: Features Section */}
-
-
-
-      {/* Text tagline Section */}
       <div className="text-button-container">
         <div className="text-container">
           <h1>Leverage top-tier development skills for your business success</h1>
-
-          <p>Discover how Intellectsoft can build a custom app tailored to your specific business needs.</p>
-
+          <p>Discover how Kalyan Tech can build a custom app tailored to your specific business needs.</p>
         </div>
-        <button className="expert-button" onClick={handleWhatsAppRedirect}>
+        <button className="expert-button" onClick={handleFormToggle}>
           Speak to Our Expert
         </button>
       </div>
 
-      {/* About section */}
+      {isFormVisible && (
+        <div className="form-container">
+          <h2>Contact Our Expert</h2>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+          <input
+            type="text"
+            name="contactNumber"
+            placeholder="Your Contact Number"
+            value={formData.contactNumber}
+            onChange={handleInputChange}
+          />
+          <input
+            type="text"
+            name="city"
+            placeholder="Your City"
+            value={formData.city}
+            onChange={handleInputChange}
+          />
+          <button className="submit-button" onClick={handleWhatsAppRedirect}>Submit</button>
+          <button className="cancel-button" onClick={handleFormToggle}>Cancel</button>
+        </div>
+      )}
 
-
-
-      {/* Web Development Services Section */}
+ {/* Web Development Services Section */}
       <h1 className="services-heading">Web Development Services We Offer</h1>
 
       <p className="services-description">
-        We employ engineers with 20+ years of experience alongside talented mid-level developers<br />
+        We employ engineers with years of experience alongside talented mid-level developers<br />
         to blend expertise with fresh ideas, ensuring your software meets the latest standards.
       </p>
 
@@ -167,15 +176,20 @@ export const Home = () => {
           </div>
         </div>
 
+        <div className="exploreBtn">
+              <div
+                className="exploreTxt"
+                onClick={(handleserviceRedirect) }
+              >
+                <span>&#x2794;</span>
+                Explore More
+              </div>
+            </div>
+
       </div>
 
-     
 
-
-     
-
-
-      {/* talk to us */}
+      <Ourwork />
 
       <div className="team-container">
         <div>
@@ -186,18 +200,7 @@ export const Home = () => {
         </button>
       </div>
 
-      <Ourwork/>
-
-      {/* company offers */}
-
-     
-
-      {/* FAQ */}
-
-      <Faq/>
-
-
-
+      <Faq />
     </div>
   );
 };
