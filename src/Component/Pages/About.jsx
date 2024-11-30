@@ -12,12 +12,6 @@ export const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <img src={aboutus} alt="About us" />
-      <div className="about-hero">
-        <h1>About Us</h1>
-        <p>
-        Kalyan Tech is a renowned Web Development & Digital Marketing company in Delhi with vast experience in Web Design, Web Development, Website Maintenance, Search Engine Optimisation (SEO), Mobile App Development, Google Ads, Social Media Management, Custom Application Development, and more.
-        </p>
-      </div>
 
 
         {/* Mission and Core Values Section */}

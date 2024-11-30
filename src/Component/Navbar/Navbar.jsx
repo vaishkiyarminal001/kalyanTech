@@ -16,7 +16,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar">
+    <nav className="nav">
       <div className="navbar-logo">
         <img src={logo} alt="Logo" className="logo-image" />
       </div>

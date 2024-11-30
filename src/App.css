@@ -2,6 +2,11 @@
   /* font-family: "Play", sans-serif; */
   font-family: 'Inter', sans-serif; 
   
+ 
+  
+}
+body{
+  background: linear-gradient(135deg, #0A0F1F, #08121E, #000000, #304c6b);
 }
 
 
