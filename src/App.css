@@ -1,12 +1,12 @@
 *{
   /* font-family: "Play", sans-serif; */
-  font-family: 'Inter', sans-serif; 
-  
- 
-  
+  /* font-family: 'Inter', sans-serif;  */
+  font-family: 'Times New Roman', Times, serif;
 }
 body{
   background: linear-gradient(135deg, #0A0F1F, #08121E, #000000, #304c6b);
+  /* background: linear-gradient(135deg, #ffcba5, #ffe3c6, #fffaf0, #ffffff, #fafafa); */
+
 }
 
 

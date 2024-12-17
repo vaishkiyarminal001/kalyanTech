@@ -1,6 +1,6 @@
 .home-container {
   /* background: linear-gradient(145deg, #000000, #4B0082, #1E3A8A, #FF69B4); */
-  background: linear-gradient(135deg, #0A0F1F,  #08121E,  #000000, #304c6b);
+  /* background: linear-gradient(135deg, #0A0F1F,  #08121E,  #000000, #304c6b); */
   display: flex;
   flex-direction: column;
   justify-content: center;
